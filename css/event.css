@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fredoka', sans-serif;
+}
+
+body {
+  background: url('../images/event.jpg') no-repeat center center/cover; 
+  color: white;
+  min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.back-vid{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.cover{
+    position: fixed;
+    inset: 0 0 0 0;
+    background-color: rgba(0, 0, 0, 0.414);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 70px;
+    background-color:rgba(255, 255, 255, 0);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 15px #2a53968a;
+    z-index: 999;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0);
+    margin-left: 5%;
+}
+header ul li{
+    list-style: none;
+}
+header ul a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    transition: 0.3s;
+    margin: 0 10px;
+}
+
+header ul a:hover{
+    text-shadow: 0 0 15px black;
+}
+.right button {
+    background-color: #cecece;
+    color: black;
+    padding: 0.75rem 1.95rem;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+.right button:hover{
+    background-color: white;
+}
+
+
+/* Main Content */
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 40px 40px;
+  gap: 20px;
+}
+
+.events {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+}
+
+.events h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.event-card {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border: 1px solid purple;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.event-card:hover {
+  transform: scale(1.02);
+}
